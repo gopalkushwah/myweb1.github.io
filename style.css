@@ -1,0 +1,89 @@
+body{
+    background-color: #927df1;
+    /* background-color: #ef7df1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    box-shadow: 5px solid black rgba(0, 0, 0, 0.9);
+}
+.right{
+    transform: rotate(180deg);
+}
+.arrow{
+    cursor: pointer;
+    /* transition: all 1s ease; */
+}
+/* .arrow:hover{
+    box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.1);
+} */
+.frame {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    transition: all 1s ease;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;   
+    cursor: pointer; 
+}
+
+@media (min-width : 416px ) and (max-width : 720px){
+    .top{
+        width: 800px;
+        /* height: 500px; */
+    }
+    .frame{
+        width: 800px;
+        height: 250px;
+        /* position: relative; */
+    }
+    .image{
+        width: 800px;
+        height: 250px;
+        object-fit: cover;
+        background-size: cover;
+    }
+    .site::before{
+        content: 'My Family';
+    }
+    .site{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+    }
+}
